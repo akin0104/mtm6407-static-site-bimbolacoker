@@ -1,11 +1,122 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Home">
+
+<section class="hero">
+
+<img src="/profile.jpg" alt="Bimbola Coker" class="profile-photo" />
+
+<h1>Welcome to My Portfolio</h1>
+
+<p>
+Hello! My name is <strong>Bimbola Coker.</strong> I am an Interactive Media
+Design student at Algonquin College with a passion for web development,
+UI/UX design, digital media, and business analysis.
+</p>
+
+<a href="/about" class="button">Learn More About Me</a>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+<h2>About Me</h2>
+<p>
+Learn more about my background, education, and professional journey.
+</p>
+</div>
+
+<div class="card">
+<h2>Skills</h2>
+<p>
+Explore my technical, creative, and business skills developed through
+school and real-world experience.
+</p>
+</div>
+
+<div class="card">
+<h2>Projects</h2>
+<p>
+View some of the academic and professional projects I have worked on.
+</p>
+</div>
+
+</section>
+
+<style>
+
+.hero{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.profile-photo{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #16213E;
+    margin-bottom:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.hero h1{
+    font-size:58px;
+    color:#16213E;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    line-height:1.8;
+    max-width:850px;
+    margin:auto;
+}
+
+.button{
+    display:inline-block;
+    margin-top:35px;
+    background:#16213E;
+    color:white;
+    padding:16px 35px;
+    border-radius:10px;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.button:hover{
+    background:#2563eb;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    margin:60px auto;
+    max-width:1200px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+    color:#16213E;
+}
+
+.card p{
+    line-height:1.7;
+}
+
+</style>
+
 </Layout>

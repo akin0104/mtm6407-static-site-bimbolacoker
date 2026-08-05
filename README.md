@@ -1,46 +1,23 @@
-# Astro Starter Kit: Basics
+# MTM6407 Static Site
 
-```sh
-npm create astro@latest -- --template basics
-```
+## Student Information
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+**Name:** Bimbola Coker
 
-## 🚀 Project Structure
+**Student Number:** 041175318
 
-Inside of your Astro project, you'll see the following folders and files:
+**Static Site Generator:** Astro
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+## Project Description
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+This project is a personal portfolio website created using Astro for the MTM6407 Static Site Generator assignment.
 
-## 🧞 Commands
+The website includes:
 
-All commands are run from the root of the project, from a terminal:
+- Home
+- About
+- Skills
+- Projects
+- Contact
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+The site is responsive and designed to showcase my background, skills, and projects.
