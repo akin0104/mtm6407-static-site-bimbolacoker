@@ -2,121 +2,121 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Home">
+<Layout title="Bimbola Coker | Portfolio">
+  <main>
+    <section class="hero">
+      <div class="profile-image">
+        <img src="/profile.jpg" alt="Bimbola Coker" />
+      </div>
 
-<section class="hero">
+      <h1>Bimbola Coker</h1>
 
-<img src="/profile.jpg" alt="Bimbola Coker" class="profile-photo" />
+      <h2>Digital Designer | Interactive Media | Web & UX</h2>
 
-<h1>Welcome to My Portfolio</h1>
+      <p>
+        Hello! My name is <strong>Bimbola Coker</strong>. I am an Interactive
+        Media Design student at Algonquin College with a passion for web
+        development, UI/UX design, digital media, and business analysis.
+      </p>
 
-<p>
-Hello! My name is <strong>Bimbola Coker.</strong> I am an Interactive Media
-Design student at Algonquin College with a passion for web development,
-UI/UX design, digital media, and business analysis.
-</p>
-
-<a href="/about" class="button">Learn More About Me</a>
-
-</section>
-
-<section class="cards">
-
-<div class="card">
-<h2>About Me</h2>
-<p>
-Learn more about my background, education, and professional journey.
-</p>
-</div>
-
-<div class="card">
-<h2>Skills</h2>
-<p>
-Explore my technical, creative, and business skills developed through
-school and real-world experience.
-</p>
-</div>
-
-<div class="card">
-<h2>Projects</h2>
-<p>
-View some of the academic and professional projects I have worked on.
-</p>
-</div>
-
-</section>
+      <div class="buttons">
+        <a href="/projects" class="primary-button">View My Projects</a>
+        <a href="/about" class="secondary-button">About Me</a>
+      </div>
+    </section>
+  </main>
+</Layout>
 
 <style>
+  .hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+  }
 
-.hero{
-    text-align:center;
-    max-width:900px;
-    margin:auto;
-    padding:60px 20px;
-}
+  .profile-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
 
-.profile-photo{
-    width:220px;
-    height:220px;
-    border-radius:50%;
-    object-fit:cover;
-    border:6px solid #16213E;
-    margin-bottom:30px;
-    box-shadow:0 8px 20px rgba(0,0,0,.2);
-}
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-.hero h1{
-    font-size:58px;
-    color:#16213E;
-    margin-bottom:20px;
-}
+  h1 {
+    font-size: 3.5rem;
+    margin: 0 0 10px;
+    color: #17213f;
+  }
 
-.hero p{
-    font-size:22px;
-    line-height:1.8;
-    max-width:850px;
-    margin:auto;
-}
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #555;
+    margin: 0 0 25px;
+  }
 
-.button{
-    display:inline-block;
-    margin-top:35px;
-    background:#16213E;
-    color:white;
-    padding:16px 35px;
-    border-radius:10px;
-    text-decoration:none;
-    font-size:18px;
-}
+  p {
+    max-width: 750px;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 35px;
+  }
 
-.button:hover{
-    background:#2563eb;
-}
+  .buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
-    margin:60px auto;
-    max-width:1200px;
-    padding:20px;
-}
+  .primary-button,
+  .secondary-button {
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.2s ease;
+  }
 
-.card{
-    background:white;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
+  .primary-button {
+    background: #17213f;
+    color: white;
+  }
 
-.card h2{
-    color:#16213E;
-}
+  .secondary-button {
+    border: 2px solid #17213f;
+    color: #17213f;
+    background: white;
+  }
 
-.card p{
-    line-height:1.7;
-}
+  .primary-button:hover,
+  .secondary-button:hover {
+    transform: translateY(-2px);
+  }
 
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
 </style>
-
-</Layout>

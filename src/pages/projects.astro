@@ -2,68 +2,188 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Projects">
+<Layout title="Projects | Bimbola Coker">
+  <main class="projects-page">
+    <h1>My Projects</h1>
 
-<h1>My Projects</h1>
+    <div class="projects-grid">
 
-<div class="projects">
+      <article class="project-card">
+        <h2>Portfolio Website</h2>
+        <p>
+          Designed and developed a responsive personal portfolio website to
+          showcase my education, skills, projects, and professional experience.
+        </p>
 
-  <div class="project">
-    <h2>Portfolio Website</h2>
-    <p>
-      Designed and developed a responsive personal portfolio website to
-      showcase my education, skills, and projects.
-    </p>
-  </div>
+        <h3>My Role</h3>
+        <p>Designed, developed, tested, and deployed the website.</p>
 
-  <div class="project">
-    <h2>ENVEI</h2>
-    <p>
-      Co-founded ENVEI, a workforce measurement platform that helps align
-      education with labour market needs through skills and workforce data.
-    </p>
-  </div>
+        <h3>Tools & Skills</h3>
+        <p>Astro, HTML, CSS, GitHub, Netlify, Responsive Design</p>
 
-  <div class="project">
-    <h2>Interactive Media Design Projects</h2>
-    <p>
-      Completed multiple web development, UI/UX design, branding, and digital
-      media projects during my studies at Algonquin College.
-    </p>
-  </div>
+        <h3>Process</h3>
+        <p>
+          Planned the site structure, developed the pages, tested the layout,
+          fixed issues, and deployed the final website.
+        </p>
+      </article>
 
-</div>
+      <article class="project-card">
+        <h2>ENVEI</h2>
+        <p>
+          Co-founded ENVEI, a workforce measurement platform designed to help
+          align education, skills, and labour market needs.
+        </p>
+
+        <h3>My Role</h3>
+        <p>
+          Co-founder involved in research, business development, product
+          planning, communication, and project coordination.
+        </p>
+
+        <h3>Tools & Skills</h3>
+        <p>Research, Business Analysis, Strategy, Communication, Project Management</p>
+
+        <h3>Process</h3>
+        <p>
+          Researched the problem, identified workforce alignment challenges,
+          developed the concept, worked with stakeholders, and contributed to
+          product and business development.
+        </p>
+      </article>
+
+      <article class="project-card">
+        <h2>IMD Summer 2026 Graduation Showcase</h2>
+        <p>
+          Developed a digital campaign strategy to promote the Interactive
+          Media Design Graduation Showcase.
+        </p>
+
+        <h3>My Role</h3>
+        <p>
+          Contributed to campaign research, LinkedIn content, content planning,
+          social media strategy, and project coordination.
+        </p>
+
+        <h3>Tools & Skills</h3>
+        <p>
+          Social Media Strategy, Content Creation, Research, Figma,
+          Project Management, Communication
+        </p>
+
+        <h3>Process</h3>
+        <p>
+          Researched the target audience, developed content ideas, planned
+          social media activities, created campaign materials, and coordinated
+          deliverables with the team.
+        </p>
+      </article>
+
+      <article class="project-card">
+        <h2>Movie Review CMS</h2>
+        <p>
+          Developed a movie review content management system using a modern
+          web development workflow.
+        </p>
+
+        <h3>My Role</h3>
+        <p>
+          Developed and deployed the project while working with the CMS,
+          backend configuration, and web interface.
+        </p>
+
+        <h3>Tools & Skills</h3>
+        <p>Strapi, JavaScript, HTML, CSS, GitHub, Render, CMS Development</p>
+
+        <h3>Process</h3>
+        <p>
+          Built the application, configured the CMS, connected the required
+          services, tested the system, solved deployment issues, and deployed
+          the backend.
+        </p>
+      </article>
+
+      <article class="project-card">
+        <h2>APOD Explorer</h2>
+        <p>
+          Created an interactive web application that allows users to explore
+          NASA's Astronomy Picture of the Day.
+        </p>
+
+        <h3>My Role</h3>
+        <p>
+          Designed and developed the interface, connected the API, tested the
+          application, and resolved image-path and functionality issues.
+        </p>
+
+        <h3>Tools & Skills</h3>
+        <p>HTML, CSS, JavaScript, API Integration, GitHub, Responsive Design</p>
+
+        <h3>Process</h3>
+        <p>
+          Planned the interface, built the application structure, connected
+          the API, tested the results, identified problems, and refined the
+          final experience.
+        </p>
+      </article>
+
+    </div>
+  </main>
+</Layout>
 
 <style>
+  .projects-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 30px;
+  }
 
-h1{
-    text-align:center;
-    margin-bottom:40px;
-    color:#0f172a;
-}
+  h1 {
+    text-align: center;
+    color: #17213f;
+    font-size: 3rem;
+    margin-bottom: 50px;
+  }
 
-.projects{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
-}
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
 
-.project{
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,.1);
-}
+  .project-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  }
 
-.project h2{
-    margin-bottom:15px;
-    color:#2563eb;
-}
+  .project-card h2 {
+    color: #2864d7;
+    font-size: 1.6rem;
+    margin-top: 0;
+  }
 
-.project p{
-    line-height:1.7;
-}
+  .project-card h3 {
+    color: #17213f;
+    font-size: 1rem;
+    margin-top: 25px;
+    margin-bottom: 8px;
+  }
 
+  .project-card p {
+    color: #333;
+    line-height: 1.7;
+    margin-top: 0;
+  }
+
+  @media (max-width: 800px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+    }
+  }
 </style>
-
-</Layout>
