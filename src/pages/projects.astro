@@ -3,12 +3,20 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Projects | Bimbola Coker">
-  <main class="projects-page">
+
+  <section class="projects-section">
     <h1>My Projects</h1>
 
     <div class="projects-grid">
 
+      <!-- Portfolio Website -->
       <article class="project-card">
+        <img
+          src="/Portfolio-Website.png"
+          alt="Portfolio Website project"
+          class="project-image"
+        />
+
         <h2>Portfolio Website</h2>
         <p>
           Designed and developed a responsive personal portfolio website to
@@ -26,9 +34,25 @@ import Layout from "../layouts/Layout.astro";
           Planned the site structure, developed the pages, tested the layout,
           fixed issues, and deployed the final website.
         </p>
+
+        <a
+          href="https://bimbola-coker-pro.lovable.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-button"
+        >
+          View Live Portfolio
+        </a>
       </article>
 
+      <!-- ENVEI -->
       <article class="project-card">
+        <img
+          src="/ENVEI.png"
+          alt="ENVEI workforce measurement platform"
+          class="project-image"
+        />
+
         <h2>ENVEI</h2>
         <p>
           Co-founded ENVEI, a workforce measurement platform designed to help
@@ -42,7 +66,10 @@ import Layout from "../layouts/Layout.astro";
         </p>
 
         <h3>Tools & Skills</h3>
-        <p>Research, Business Analysis, Strategy, Communication, Project Management</p>
+        <p>
+          Research, Business Analysis, Strategy, Communication,
+          Project Management
+        </p>
 
         <h3>Process</h3>
         <p>
@@ -52,7 +79,14 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </article>
 
+      <!-- IMD Showcase -->
       <article class="project-card">
+        <img
+          src="/IMD-Showcase.png"
+          alt="IMD Summer 2026 Graduation Showcase campaign"
+          class="project-image"
+        />
+
         <h2>IMD Summer 2026 Graduation Showcase</h2>
         <p>
           Developed a digital campaign strategy to promote the Interactive
@@ -79,8 +113,10 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </article>
 
+      <!-- Movie Review CMS -->
       <article class="project-card">
         <h2>Movie Review CMS</h2>
+
         <p>
           Developed a movie review content management system using a modern
           web development workflow.
@@ -103,8 +139,16 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </article>
 
+      <!-- APOD Explorer -->
       <article class="project-card">
+        <img
+          src="/APOD-Explorer.png"
+          alt="APOD Explorer application"
+          class="project-image"
+        />
+
         <h2>APOD Explorer</h2>
+
         <p>
           Created an interactive web application that allows users to explore
           NASA's Astronomy Picture of the Day.
@@ -117,7 +161,9 @@ import Layout from "../layouts/Layout.astro";
         </p>
 
         <h3>Tools & Skills</h3>
-        <p>HTML, CSS, JavaScript, API Integration, GitHub, Responsive Design</p>
+        <p>
+          HTML, CSS, JavaScript, API Integration, GitHub, Responsive Design
+        </p>
 
         <h3>Process</h3>
         <p>
@@ -128,21 +174,22 @@ import Layout from "../layouts/Layout.astro";
       </article>
 
     </div>
-  </main>
+  </section>
+
 </Layout>
 
 <style>
-  .projects-page {
+  .projects-section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 70px 30px;
   }
 
-  h1 {
+  .projects-section h1 {
     text-align: center;
-    color: #17213f;
-    font-size: 3rem;
+    font-size: 48px;
     margin-bottom: 50px;
+    color: #182443;
   }
 
   .projects-grid {
@@ -152,29 +199,53 @@ import Layout from "../layouts/Layout.astro";
   }
 
   .project-card {
-    background: white;
-    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  .project-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 24px;
+    display: block;
   }
 
   .project-card h2 {
     color: #2864d7;
-    font-size: 1.6rem;
-    margin-top: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
   }
 
   .project-card h3 {
-    color: #17213f;
-    font-size: 1rem;
-    margin-top: 25px;
-    margin-bottom: 8px;
+    color: #182443;
+    font-size: 18px;
+    margin-top: 28px;
+    margin-bottom: 10px;
   }
 
   .project-card p {
-    color: #333;
+    color: #222;
+    font-size: 17px;
     line-height: 1.7;
-    margin-top: 0;
+  }
+
+  .project-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 20px;
+    background: #182443;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+
+  .project-button:hover {
+    background: #2864d7;
   }
 
   @media (max-width: 800px) {
@@ -182,8 +253,8 @@ import Layout from "../layouts/Layout.astro";
       grid-template-columns: 1fr;
     }
 
-    h1 {
-      font-size: 2.4rem;
+    .projects-section h1 {
+      font-size: 38px;
     }
   }
 </style>
